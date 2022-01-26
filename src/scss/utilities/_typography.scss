@@ -1,0 +1,12 @@
+@use './variables' as var;
+@use './functions';
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+$main-font: 'Open Sans', sans-serif;
+
+h1 {
+  color: var.$very-dark-blue;
+  font-size: functions.font-size(larger);
+  font-weight: functions.font-weight(regular);
+}

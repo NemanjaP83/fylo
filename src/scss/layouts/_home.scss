@@ -1,0 +1,82 @@
+// utilities
+@use '../utilities/' as *;
+@use '../components';
+@use '../partials/header';
+
+body {
+  font-family: $main-font;
+  font-weight: font-weight(regular);
+  font-size: 14px;
+  color: $very-dark-blue;
+}
+
+.nav {
+  height: 100%;
+
+  .logo {
+    height: 100%;
+
+    & > img {
+      height: 100px;
+      width: 100px;
+    }
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-item {
+    color: $very-dark-blue;
+    width: max-content;
+    margin-right: 50px;
+    font-weight: font-weight(regular);
+    font-size: font-size(normal);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.hero {
+  padding-top: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .content {
+    width: 45%;
+  }
+
+  &__img {
+    width: 45%;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: font-weight(bold);
+  }
+
+  &__text {
+    color: inherit;
+    margin-top: 25px;
+    font-size: 18px;
+  }
+
+  input {
+    margin-top: 25px;
+    margin-right: 20px;
+    padding: 10px;
+    width: 300px;
+  }
+}
+
+.inner {
+  background-color: burlywood;
+  border: 1px solid black;
+  min-width: 100px;
+  min-height: 200px;
+}
