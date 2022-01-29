@@ -28,10 +28,10 @@ to preview your application after **run build**
 
 ### This project is configured for quick start
 
-- you can use css
-- or scss
+- you can use css or scss
 - includes css reset
-- includes linting
+- includes linting (eslint & stylelint)
+- code formatting with prettier
 - postcss
 - purgeCSS
 - autoprefixer

@@ -1,0 +1,49 @@
+@use '../utilities/' as *;
+
+.card {
+  margin-top: 25px;
+  padding: 30px;
+  width: 400px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 6px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  row-gap: 15px;
+  box-shadow: rgb(0 0 0 / 35%) 0 5px 15px;
+}
+
+.quotes {
+  color: red;
+}
+
+.card-testimonial {
+  font-size: 14px;
+  line-height: 1.8;
+  color: $very-dark-blue;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: bold;
+  color: $very-dark-blue;
+}
+
+.user-position {
+  font-size: 12px;
+  color: $very-dark-blue;
+}
+
+.user-img img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 15px;
+}

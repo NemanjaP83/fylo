@@ -36,31 +36,116 @@
           </a>
         </div>
         <div class="links">
-          <div class="nav-item">Features</div>
-          <div class="nav-item">Team</div>
-          <div class="nav-item">Sign In</div>
+          <a href="#" class="nav-item">Features</a>
+          <a href="#" class="nav-item">Team</a>
+          <a href="#" class="nav-item">Sign In</a>
         </div>
       </nav>
     </header>
-    <div class="container">
-      <section class="hero">
-        <div class="content">
-          <h1 class="hero__title">
-            All your files in one secure location, accessible anywhere.
-          </h1>
-          <p class="hero__text">
-            Fylo stores your most important files in one secure location. Access
-            them wherever you need, share and collaborate with friends, familly,
-            and co-workers.
-          </p>
-          <input type="text" />
-          <button class="btn">Get Started</button>
-        </div>
-        <div class="hero__img">
-          <img src="/images/illustration-1.svg" alt="ilustration-1" />
-        </div>
-      </section>
+    <section class="hero container">
+      <div class="content">
+        <h1 class="hero__title">
+          All your files in one secure location, accessible anywhere.
+        </h1>
+        <p class="hero__text">
+          Fylo stores your most important files in one secure location. Access
+          them wherever you need, share and collaborate with friends, familly,
+          and co-workers.
+        </p>
+        <input type="text" />
+        <button class="btn">Get Started</button>
+      </div>
+      <div class="hero__img">
+        <img src="/images/illustration-1.svg" alt="ilustration-1" />
+      </div>
+    </section>
+    <div class="curve">
+      <svg
+        width="1440"
+        height="114"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <defs><path id="a" d="M0 0h1440v114H0z" /></defs>
+        <g fill="none" fill-rule="evenodd">
+          <mask id="b" fill="#fff"><use xlink:href="#a" /></mask>
+          <path
+            d="M0 72.728C318.801 24.243 558.801 0 720 0c161.199 0 401.199 24.243 720 72.728v765.146H0V72.728z"
+            fill="#F8F8FE"
+            mask="url(#b)"
+          />
+        </g>
+      </svg>
     </div>
+    <section class="testimonials">
+      <div class="container">
+        <div class="row">
+          <div class="text col-7-lg">
+            <h2 class="testimonials__title">
+              Stay productive, wherever you are
+            </h2>
+            <p class="testimonials__text col-9-lg">
+              Never let location be an issue when accessing your files. Fylo has
+              you covered for all of your file storage needs.
+            </p>
+            <p class="testimonials__text col-9-lg">
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required.
+            </p>
+            <div class="testimonials__link">
+              <a class="testimonials__link-link" href="#"
+                >See how Fylo works
+                <img
+                  class="testimonials__link-arrow"
+                  src="/images/icon-arrow.svg"
+                  alt="arrow"
+                />
+              </a>
+            </div>
+            <div class="card">
+              <div class="quotes">
+                <img src="/images/icon-quotes.svg" alt="quotes" />
+              </div>
+              <p class="card-testimonial">
+                Fylo has improved our team productivity by an order of
+                magnitude. Since making the switch our team has become a well -
+                oiled collaboration machine.
+              </p>
+              <div class="user">
+                <div class="user-img">
+                  <img src="/images/avatar-testimonial.jpg" alt="avatar" />
+                </div>
+                <div class="user-details">
+                  <h4 class="user-name">Kyle Burton</h4>
+                  <p class="user-position">Founder & CEO, Huddle</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img col-5-lg">
+            <img src="/images/illustration-2.svg" alt="illustration-2" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="text col-6-lg">
+            <h3 class="contact__title">Get early access today</h3>
+            <p class="contact__text text col-9-lg">
+              It only take a minut to sign up and our free starter tier is
+              extremly generous. If you have any questions, our support team
+              would be happy to help you.
+            </p>
+          </div>
+          <div class="contact__form col-6-lg">
+            <input type="text" name="email" id="email" />
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
