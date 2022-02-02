@@ -2,12 +2,24 @@
 @use '../utilities/' as *;
 @use '../components';
 @use '../partials/header';
+@use '../partials/footer';
 
 body {
   font-family: $main-font;
   font-weight: font-weight(regular);
   font-size: 14px;
   color: $very-dark-blue;
+}
+
+input {
+  outline: none;
+  border: 1px solid $very-dark-blue;
+  padding: 10px;
+  color: $very-dark-blue;
+
+  &.error {
+    border: 1px solid orangered;
+  }
 }
 
 .hero {
@@ -35,11 +47,10 @@ body {
     font-size: 18px;
   }
 
-  input {
+  &__input {
     margin-top: 25px;
     margin-right: 20px;
-    padding: 10px;
-    width: 300px;
+    width: 350px;
   }
 }
 
@@ -117,5 +128,15 @@ body {
     color: inherit;
     margin-top: 25px;
     font-size: 16px;
+  }
+
+  &__form {
+    padding-left: 100px;
+  }
+
+  &__input {
+    width: 100%;
+    margin-bottom: 5px;
+    border: none;
   }
 }
