@@ -52,8 +52,14 @@
           them wherever you need, share and collaborate with friends, familly,
           and co-workers.
         </p>
-        <input class="hero__input" type="text" />
-        <button class="btn">Get Started</button>
+        <input
+          class="hero__input"
+          type="text"
+          name="hero-email"
+          id="hero-input"
+        />
+        <button class="btn" id="hero-btn">Get Started</button>
+        <p class="hero__error-txt">Please check your email</p>
       </div>
       <div class="hero__img">
         <img src="/images/illustration-1.svg" alt="ilustration-1" />
@@ -140,10 +146,15 @@
             </p>
           </div>
           <div class="contact__form col-6-lg">
-            <input class="contact__input" type="text" name="email" id="email" />
-            <p>please check your email</p>
+            <input
+              class="contact__input"
+              type="text"
+              name="contact-email"
+              id="contact-input"
+            />
+            <p class="contact__form-error">please check your email</p>
             <div>
-              <button class="btn">Get Started for Free</button>
+              <button class="btn" id="contact-btn">Get Started for Free</button>
             </div>
           </div>
         </div>
