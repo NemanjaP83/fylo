@@ -1,5 +1,6 @@
 @use 'sass:math';
 @use './breakpoints' as bp;
+@use './mixins' as *;
 
 $grid-columns: 12;
 $justify-content: start, end, center, space-between, space-around;
@@ -19,15 +20,16 @@ $grid-gaps: (
   width: 100%;
   max-width: 1280px;
   margin-inline: auto;
+  padding-inline: 30px;
+
+  @include bp.xxl {
+    padding-inline: 0;
+  }
 }
 
 .row {
   display: flex;
   flex-flow: row wrap;
-}
-
-.display-flex {
-  display: flex;
 }
 
 // grid gaps

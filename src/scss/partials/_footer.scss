@@ -15,8 +15,10 @@
   }
 
   &__links {
-    li {
-      width: max-content;
+    flex-direction: column;
+
+    @include sm {
+      flex-direction: row;
     }
 
     a {
@@ -28,22 +30,30 @@
       svg {
         margin-right: 20px;
       }
-
-      &:hover {
-        cursor: pointer;
-        color: $hover-blue;
-
-        path {
-          fill: $hover-blue;
-        }
-      }
     }
 
     .social-svg {
-      width: 160px;
       display: inline-flex;
-      align-items: flex-start;
-      justify-content: space-between;
+      align-self: center;
+
+      a {
+        padding-top: 0;
+      }
+
+      @include sm {
+        align-self: flex-start;
+      }
+    }
+  }
+
+  .link-group > * {
+    &:hover {
+      cursor: pointer;
+      color: $hover-blue;
+
+      path {
+        fill: $hover-blue;
+      }
     }
   }
 
@@ -64,6 +74,8 @@
 
     &:hover {
       border: 1px solid $hover-blue;
+      cursor: pointer;
+      color: $hover-blue;
 
       path {
         fill: $hover-blue;
