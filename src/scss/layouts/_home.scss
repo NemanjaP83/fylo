@@ -14,9 +14,9 @@ body {
 
 input {
   outline: none;
-  border: 1px solid $very-dark-blue;
   padding: 10px;
   color: $very-dark-blue;
+  border: 1px solid $very-dark-blue;
 }
 
 .hero {
@@ -243,8 +243,4 @@ input {
     margin-bottom: 5px;
     border: 1px solid transparent;
   }
-}
-
-.error {
-  border: 1px solid $error-red;
 }

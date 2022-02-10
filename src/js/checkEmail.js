@@ -7,20 +7,20 @@ const heroErrMsg = document.querySelector('.hero__error-txt');
 
 contactBtn.addEventListener('click', () => {
   if (validateEmail(contactInput.value)) {
-    contactInput.classList.remove('error');
+    contactInput.style.borderColor = 'hsl(243deg 87% 12%)';
     contactErrMsg.style.opacity = 0;
   } else {
-    contactInput.classList.add('error');
+    contactInput.style.borderColor = 'hsl(0deg 66% 53%)';
     contactErrMsg.style.opacity = 1;
   }
 });
 
 heroBtn.addEventListener('click', () => {
   if (validateEmail(heroInput.value)) {
-    heroInput.classList.remove('error');
+    heroInput.style.borderColor = 'hsl(243deg 87% 12%)';
     heroErrMsg.style.opacity = 0;
   } else {
-    heroInput.classList.add('error');
+    heroInput.style.borderColor = 'hsl(0deg 66% 53%)';
     heroErrMsg.style.opacity = 1;
   }
 });
